@@ -95,8 +95,8 @@
 const http = require('http');
 const fs = require('fs');
 const data = fs.readFileSync('./data.json', 'utf8');
-const htmlTemplate = fs.readFileSync('./templates/page.html', {encoding: 'utf8'});
-const cardTemplate = fs.readFileSync('./templates/card.html', 'utf8');
+const htmlTemplate = fs.readFileSync('./page.html', {encoding: 'utf8'});
+const cardTemplate = fs.readFileSync('./card.html', 'utf8');
 
 const products = JSON.parse(data).products;
 
